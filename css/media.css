@@ -1,0 +1,39 @@
+/* md */
+
+@media (max-width:1200px) {
+	
+	html {font-size: 10px;}
+	.header__menu__item {margin: 0 0 0 1.5rem;}
+
+}
+
+/* sm */
+
+@media (max-width:991px) {
+
+	/*html {font-size: 9px;}*/
+
+	.header__menu-link, .header__menu__item_close {display: block;}
+	.header__menu {opacity: 0; width: 0; overflow: hidden; position: fixed; z-index: 111; top: 0; left: 0; height: 100%; text-align: center; background: rgba(0,0,0,0.8); transition: all .2s ease-in;}
+	.header__menu.show {opacity: 1; width: 100%;}
+	.header__menu:before {content: ''; position: relative; display: inline-block; vertical-align: middle; width: 0; height: 100%;}
+	.header__menu__list {display: inline-block; vertical-align: middle;}
+	.header__menu__item {float: none; margin: 0; border-bottom: 1px solid #666; white-space: nowrap;}
+	.header__menu__item__link {display: block; padding: 0 5rem; line-height: 5rem; color: #fff;}
+	.header__menu__item__link:hover, .header__menu__item_active .header__menu__item__link {color: #999;}
+	.header__menu__item .button {display: block; line-height: 5rem;}
+
+	.footer__info {line-height: 1.6;}
+	.footer__share {text-align: left; margin: 2rem 0 1rem;}
+
+}
+
+/* xs */
+
+@media all and (max-width: 767px) {
+
+	/*html {font-size: 9px;}*/
+	h1 {font-size: 4rem;}
+	.main-content {margin-top: 0;}
+
+}
