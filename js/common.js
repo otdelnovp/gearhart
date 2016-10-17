@@ -15,6 +15,15 @@ $(function() {
 		}
 	});
 
+	$('.donate__link').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		fixedBgPos: true,
+		overflowY: 'auto',
+		closeBtnInside: true,
+		preloader: false
+	});
+
 	$("#contactform").submit(function() {
 		$.ajax({
 			type: "POST",
